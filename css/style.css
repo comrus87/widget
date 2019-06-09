@@ -41,6 +41,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "RotondaC", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 a {
@@ -120,14 +122,12 @@ img {
 .discount {
   margin: 0;
   font-family: "Myriad Pro Regular";
-  font-size: 14px;
-  line-height: 18px;
   color: #484848;
   width: 230px;
 }
 
 .social__list {
-  margin: 0;
+  margin: 19px 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -155,4 +155,82 @@ img {
 .social__item--twitter {
   border: 2px solid #3aaae3;
   padding-top: 17px;
+}
+
+.social__item--vkontakte {
+  border: 2px solid #416da1;
+  padding-top: 14px;
+  padding-left: 2px;
+}
+
+.form__item-email {
+  display: block;
+  width: 264px;
+  padding: 6px 0 5px 12px;
+  border: 1px solid #2856a8;
+  border-radius: 5px;
+  color: #b2b2b2;  /*здесь по идеи текст ввода лучше потемнее*/
+}
+
+.form__item-email::placeholder {
+  color: #b2b2b2;
+}
+
+.form__item-text {
+  padding: 15px 0 0 10px;
+  margin: 12px 0 15px 0;
+  resize: none;
+  display: block;
+  width: 264px;
+  min-height: 150px;
+  border: 1px solid #2856a8;
+  border-radius: 5px;
+  color: #484848;
+}
+
+.form__button {
+  border: none;
+  background-color: #2856a8;
+  color: #ffffff;
+  width: 264px;
+  border-radius: 24px;
+  padding: 15px 0 14px 0;
+  text-decoration: center;
+  cursor: pointer;
+}
+
+.regulation {
+  background-color: #2856a8;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 21px 18px 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.regulation__link {
+  display: block;
+  padding: 0;
+  width: 264px;
+  border: 1px dashed #2856a8;
+  border-radius: 8px;
+  color: #2856a8;
+  padding: 12px 0 12px 17px;
+}
+
+.regulation__link::placeholder {
+   color: #2856a8;
+}
+
+.regulation__text {
+  margin: 24px 0 19px 0;
+  font-size: 12px;
+  line-height: 18px;
+  position: relative;
+}
+
+.regulation__text-button {
+  border: none;
+  background-color: transparent;
+  color: #f1d02f;
 }
