@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "ALS Schlange Sans";
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/ALSSchlangesans-Black.woff2") format("woff2"), url("fonts/ALSSchlangesans-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RotondaC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/rotondac.woff") format("woff");
+}
+
+@font-face {
+font-family: "RotondaC Bold";
+font-style: normal;
+font-weight: normal;
+src: url("../fonts/rotondac-bold.woff") format("woff");
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "RotondaC", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page-wrap {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.status {
+  color: #ffffff;
+  font-family: "RotondaC Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #2856a8;
+  padding: 16px 38px 13px 18px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+
+.status__number {
+  color: #f1d02f;
+}
+
+.button-close {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  top: 9px;
+  right: 12px;
+}
+
+.button-close::before,
+.button-close::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background-color: #ffffff;
+  top: 5px;
+  left: -1px;
+}
+
+.button-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.button-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.content-wrap {
+  padding: 30px 18px 17px;
+}
+
+.name {
+  color: #2856a8;
+  font-family: "ALS Schlange Sans";
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0 0 20px 0;
+}
+
+.discount {
+  margin: 0;
+  font-family: "Myriad Pro Regular";
+  font-size: 14px;
+  line-height: 18px;
+  color: #484848;
+  width: 230px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.social__item--odnoclass {
+  border: 2px solid #ef8116;
+  padding-top: 12px;
+}
+
+.social__item--facebook {
+  border: 2px solid #414594;
+  padding-top: 12px;
+  padding-right: 2px;
+}
+
+.social__item--twitter {
+  border: 2px solid #3aaae3;
+  padding-top: 17px;
+}

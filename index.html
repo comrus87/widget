@@ -7,25 +7,27 @@
   <title>Виджет</title>
 </head>
 <body>
-<div class="wrap">
-	<div class="status"> Ваш заказ №1890998 принят
-	  и находится в обработке 
+<div class="page-wrap">
+	<div class="status"> Ваш заказ № <span class="status__number">1890998</span> принят и находится в обработке
+    <button class="button-close"> </button>
   </div>
-	<p class="name">Михаил Иванович!</p>
-	<p class="discount">подарите друзьям скидку 
-в «CompanyName» и получите скидку 
-в подарок, за каждого друга</p>
+  <div class="content-wrap">
+  	<p class="name">Михаил Иванович!</p>
+  	<p class="discount">подарите друзьям скидку <br>
+      в «CompanyName» и получите скидку 
+      в подарок, за каждого друга</p>
     <ul class="social__list">
-    	<li class="social__item"><a href="https://ok.ru"><img src="img/odnoclass.png" alt="Логотип одноклассников"></a></li>
-    	<li class="social__item"><a href="https://www.facebook.com"><img src="img/facebook.png" alt="Логотип фейсбука"></a></li>
-    	<li class="social__item"><a href="https://twitter.com"><img src="img/twitter.png" alt="Логотип твиттера"></a></li>
-    	<li class="social__item"><a href="https://vk.com"><img src="img/vkontakte.png" alt="Логотип контакта"></a></li>
+    	<li class="social__item social__item--odnoclass"><a href="https://ok.ru"><img src="img/odnoclass.png" alt="Логотип одноклассников"></a></li>
+    	<li class="social__item social__item--facebook"><a href="https://www.facebook.com"><img src="img/facebook.png" alt="Логотип фейсбука"></a></li>
+    	<li class="social__item social__item--twitter"><a href="https://twitter.com"><img src="img/twitter.png" alt="Логотип твиттера"></a></li>
+    	<li class="social__item social__item--vkontakte"><a href="https://vk.com"><img src="img/vkontakte.png" alt="Логотип контакта"></a></li>
     </ul>
     <form class="form" action="http://floctoryblablabla.ru" method="post">
       <input class="form__item-email" type="text" name="email" placeholder="E-mail друзей">
       <textarea class="form__item-text" name="text" placeholder="Хороший ассортимент и цены в %site_name%. Только что после покупки  подарили скидку %friend_reward% для моих друзей! Времени мало, Вперёд!"></textarea>
       <button class="form__button" type="submit"> Отправить </button>
     </form>
+  </div>
     <div class="regulation">
        <input class="regulation__link" type="text" name="link" placeholder="http://floctoryblablabla/#########">
        <p class="regulation__text">Правила акции <button class="regulation__text-button">^</button></p>
