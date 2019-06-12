@@ -2,6 +2,7 @@
     font-family: "ALS Schlange Sans";
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
     src: url("../fonts/ALSSchlangesans-Black.woff2") format("woff2"), url("fonts/ALSSchlangesans-Black.woff") format("woff");
 }
 
@@ -9,6 +10,7 @@
   font-family: "Myriad Pro Regular";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
 }
 
@@ -16,14 +18,16 @@
   font-family: "RotondaC";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: url("../fonts/rotondac.woff") format("woff");
 }
 
 @font-face {
-font-family: "RotondaC Bold";
-font-style: normal;
-font-weight: normal;
-src: url("../fonts/rotondac-bold.woff") format("woff");
+  font-family: "RotondaC Bold";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/rotondac-bold.woff") format("woff");
 }
 
 
@@ -43,6 +47,7 @@ body {
   font-family: "RotondaC", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
 }
 
 a {
@@ -63,12 +68,14 @@ img {
   font-family: "RotondaC Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
+  font-weight: 700;
   text-transform: uppercase;
   background-color: #2856a8;
   padding: 16px 38px 13px 18px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   position: relative;
+  letter-spacing: 0.42px;
 }
 
 .status__number {
@@ -118,7 +125,7 @@ img {
   display: block;
   width: 95px;
   text-align: center;
-  padding: 9px 0 8px 0;
+  padding: 9px 0 5px 0;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
   color: #f1d02f;
@@ -127,7 +134,7 @@ img {
   font-size: 25px;
   line-height: 31px;
   right: 0;
-  top: 16px;
+  top: 14px;
 }
 
 
@@ -136,18 +143,21 @@ img {
   font-family: "ALS Schlange Sans";
   font-size: 18px;
   line-height: 18px;
+  font-weight: 700;
   margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
 }
 
 .discount {
   margin: 0;
   font-family: "Myriad Pro Regular";
   color: #484848;
-  width: 230px;
+  width: 250px;
+  letter-spacing: 0.5px;
 }
 
 .social__list {
-  margin: 19px 0;
+  margin: 19px 0 20px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -198,7 +208,7 @@ img {
 
 .form__item-text {
   padding: 15px 0 0 10px;
-  margin: 12px 0 15px 0;
+  margin: 12px 0 17px 0;
   resize: none;
   display: block;
   width: 264px;
@@ -206,6 +216,9 @@ img {
   border: 1px solid #2856a8;
   border-radius: 5px;
   color: #484848;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.42px;
 }
 
 .form__button {
@@ -223,7 +236,7 @@ img {
   background-color: #2856a8;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  padding: 21px 18px 15px;
+  padding: 22px 18px 14px;
   color: #ffffff;
   text-align: center;
 }
@@ -236,6 +249,7 @@ img {
   border-radius: 8px;
   color: #2856a8;
   padding: 12px 0 12px 17px;
+  letter-spacing: 0.5px;
 }
 
 .regulation__link::placeholder {
@@ -243,11 +257,12 @@ img {
 }
 
 .regulation__text {
-  margin: 24px 0 19px 79px;
+  margin: 24px 0 17px 79px;
   font-size: 12px;
   line-height: 18px;
   position: relative;
   width: 86px;
+  letter-spacing: 0.4px;
 }
 
 .regulation__text-button {
@@ -255,7 +270,7 @@ img {
   background-color: transparent;
   position: absolute;
   top: 7px;
-  right: -16px;
+  right: -18px;
 }
 
 .regulation__text-button::before,
@@ -284,4 +299,5 @@ img {
   text-transform: uppercase;
   text-decoration: underline;
   color: #ffffff;
+  letter-spacing: 0.5px;
 }
