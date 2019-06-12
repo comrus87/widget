@@ -80,7 +80,7 @@ img {
   width: 9px;
   height: 9px;
   background: transparent;
-  border: 0;
+  border: none;
   cursor: pointer;
   top: 9px;
   right: 12px;
@@ -109,7 +109,27 @@ img {
 
 .content-wrap {
   padding: 30px 18px 17px;
+  position: relative;
 }
+
+.content-wrap::before {
+  content: "10%";
+  position: absolute;
+  display: block;
+  width: 95px;
+  text-align: center;
+  padding: 9px 0 8px 0;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  color: #f1d02f;
+  background-color: #2856a8;
+  font-family: "ALS Schlange Sans";
+  font-size: 25px;
+  line-height: 31px;
+  right: 0;
+  top: 16px;
+}
+
 
 .name {
   color: #2856a8;
@@ -223,14 +243,45 @@ img {
 }
 
 .regulation__text {
-  margin: 24px 0 19px 0;
+  margin: 24px 0 19px 79px;
   font-size: 12px;
   line-height: 18px;
   position: relative;
+  width: 86px;
 }
 
 .regulation__text-button {
   border: none;
   background-color: transparent;
-  color: #f1d02f;
+  position: absolute;
+  top: 7px;
+  right: -16px;
+}
+
+.regulation__text-button::before,
+.regulation__text-button::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: #f1d02f;
+}
+
+.regulation__text-button::before {
+   right: 4px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.regulation__text-button::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.regulation__license {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
 }
